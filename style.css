@@ -1,10 +1,58 @@
-/* body{
-    height: 100%;
-    width: 100%;
-    margin: 0;
+body {
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
+    margin: 0;
 }
- */
+
+/***********HEADER*************/
+
+header, nav {
+    color: white;
+    z-index: 2;
+}
+
+section, footer {
+    padding: 3em 0!important;
+}
+
+header {
+    /*padding-top: 1em;*/
+    
+}
+
+#logo {
+    font-family: 'Architects Daughter', cursive;
+    z-index: 2;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+#phone {
+    z-index: 2;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+nav a {
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.slider {
+    z-index: 1;
+    top:-200px;
+    /*position: initial;*/
+    
+}
+
+#test {
+    /*position: relative;
+    bottom: 230px;*/
+}
+
+/******************QSN******************/
+
 .nous-img{
     width: 500px;
 }
@@ -46,15 +94,93 @@
     font-size: 17px;
 }
 
-#liste div{
-    width: 100px;
+#tarif svg {
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+    width: 10em;
+    height: 10em;
+    margin-bottom: 2em;
 }
 
-.box-iframe > iframe {
-    max-width: 100%;
-    width: 100%;
-    margin-bottom: -5px;
-  }
-  .scrolloff {
-    pointer-events: none;
-  }
+#tarif h1 {
+    margin-bottom: 3em;
+}
+
+.vignette {
+    background-color: #5E5139;
+    color: white;
+    padding: 2em;
+}
+.vehicule {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.5em;
+}
+
+#tarif {
+    background-color: rgb(173, 140, 77, 0.5);
+}
+
+.tarif {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+#chiffre .container {
+    padding: 5em 0;
+}
+
+#chiffre {
+    text-align: center;
+    background-image: url('/images/back-chiffre.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    color: white;
+}
+
+#trajets, #vehicules, #employes, #points_de_retrait {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#chiffre p {
+font-size: 30px;
+}
+
+#partner {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+#partner img {
+    width: 10%!important;
+    
+}
+#ou-nous-trouver {
+    padding-bottom: 0!important;
+}
+
+#ou-nous-trouver h3, .text-map {
+    margin-bottom: 1em;
+}
+
+.text-map {
+    margin-bottom: 3em;
+}
+
+#contact {
+    padding-top: 0;
+}
+
+#contact .container {
+    padding: 3em;
+}
+
+footer {
+    background-color: #00849C;
+    color: white;
+}
+footer a {
+    color: black;
+}
+

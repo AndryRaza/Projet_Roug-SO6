@@ -1,33 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Roug'SO6</title>
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <title>ROUG'SO6</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
-    <div>
-        <header>
+    <!-----------------------------HEADER --------------------------------->
+    <header class="d-flex flex-column align-items-center pb-3">
+        <div class="header d-flex col-8 justify-content-between align-items-center py-3 d-none">
+            <!--HEADER-->
+            <div id="logo">Roug'SO6</div>
+            <div id="phone">
+                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-telephone-inbound"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+                +262.6 99999999
+            </div>
+        </div>
+        <!--NAV-->
+        <nav class="col-8 bg-white rounded m-3 bg-white d-none d-xl-block ">
+            <ul class="nav justify-content-center text-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">qui sommes-nous ?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">nos tarifs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">nos partenaires</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!--SLIDER-->
+        <div id="carouselExampleCaptions" class="carousel slide slider carousel_debut" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slide-2.jpg" class="d-block w-100 h-25" alt="slide1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Vous êtes au courant? Non ?!</h5>
+                        <p>Vous allez être électrifié par notre nouvelle abonnement.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide-2.jpg" class="d-block w-100 h-25" alt="slide2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Vous êtes au courant? Non ?!</h5>
+                        <p>Vous allez être électrifié par notre nouvelle abonnement.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <div id="test">
 
 
-
-        </header>
-        <!--Qui sommes nous ?-->
-        <section>
-            <div class="container-fluid m-0 p-0 mb-5 ">
+        <!-----------------------------QUI SOMMES NOUS --------------------------------->
+        <section id="about">
+            <div class="container">
                 <h2 class="text-center mb-5 mt-3">Qui sommes-nous ?</h2>
-                <div class="row row-cols-lg-2 row-cols-1 text-center">
-                    <div class="col d-none d-sm-block"><img class="nous-img pb-2"
-                            src="../Projet_Roug-SO6/Images/icones/Qui_sommes_nous.jpg" alt="Voiture électrique"></div>
+                <div class="row row-cols-lg-2 row-cols-1 text-center align-items-center d-flex">
+                    <div class="col d-none d-sm-block"><img class="nous-img pb-2" src="/images/about.jpg"
+                            alt="Voiture électrique"></div>
                     <div class="col">
-                        <p class="text-nous">
+                        <p class="text-nous text-left">
                             Créé en 2018, Roug’SO6 est une startup de location de véhicule électriques à destination des
                             entreprises. Spécialisée dans les nouveaux usages liées à la mobilité, notre société propose
                             un
@@ -45,52 +115,239 @@
                 </div>
             </div>
         </section>
-        <!--Fin Qui sommes-nous ?-->
+        <!-----------------------------TARIFS --------------------------------->
+        <section id="tarif">
+            <!-- Nos Tarifs-->
+            <h1 class="text-uppercase text-white text-center font-weight-bold">nos tarifs</h1>
+            <div class="container">
+                <div class="row row-cols-lg-4 row-cols-1">
+                    <!--VOITURE ELECTRIQUE-->
+                    <div class="col text-center vignette">
+                        <svg version="1.1" x="0px" y="0px" viewBox="0 0 512 512" width="15em" height="15em">
+                            <g transform="translate(0 1)">
 
+                                <path d="M102.4,417.133c-9.387,0-17.067,7.68-17.067,17.067s7.68,17.067,17.067,17.067c9.387,0,17.067-7.68,17.067-17.067
+				S111.787,417.133,102.4,417.133z" />
+                                <path d="M409.6,417.133c-9.387,0-17.067,7.68-17.067,17.067s7.68,17.067,17.067,17.067s17.067-7.68,17.067-17.067
+				S418.987,417.133,409.6,417.133z" />
+                                <path
+                                    d="M490.667,314.733H455.68c-24.747,0-48.64-13.653-62.293-34.987L363.52,231.96c-10.24-17.067-29.867-28.16-50.347-28.16
+				h-174.08c-20.48,0-39.253,11.093-50.347,28.16l-19.516,31.616c-0.314-0.028-0.635-0.043-0.964-0.043
+				c-28.16,0-51.2-23.04-51.2-51.2V101.4c0-18.773,15.36-34.133,34.133-34.133s34.133,15.36,34.133,34.133
+				c0,28.16,23.04,51.2,51.2,51.2c25.253,0,46.375-18.533,50.47-42.667H204.8c5.12,0,8.533-3.413,8.533-8.533V58.733
+				c0-5.12-3.413-8.533-8.533-8.533V24.6c0-5.12-3.413-8.533-8.533-8.533s-8.533,3.413-8.533,8.533v25.6h-17.067V24.6
+				c0-5.12-3.413-8.533-8.533-8.533S153.6,19.48,153.6,24.6v25.6c-5.12,0-8.533,3.413-8.533,8.533V101.4
+				c0,5.12,3.413,8.533,8.533,8.533h15.979c-3.814,14.679-17.216,25.6-33.046,25.6c-18.773,0-34.133-15.36-34.133-34.133
+				c0-28.16-23.04-51.2-51.2-51.2C23.04,50.2,0,73.24,0,101.4v110.933c0,34.443,25.857,63.122,59.114,67.631L46.08,301.08
+				c-5.12,8.533-14.507,13.653-24.747,13.653c-5.973,0-11.093,2.56-15.36,5.973C2.56,324.973,0,330.093,0,336.067v76.8
+				c0,16.213,13.653,29.867,29.867,29.867h13.403c4.075,29.155,28.753,51.2,59.131,51.2c30.378,0,55.056-22.045,59.131-51.2h188.938
+				c4.075,29.155,28.753,51.2,59.131,51.2s55.056-22.045,59.131-51.2h9.136c18.773,0,34.133-15.36,34.133-34.133v-72.533
+				C512,324.12,502.613,314.733,490.667,314.733z M162.133,67.267h34.133v25.6h-34.133V67.267z M136.533,289.133V255h110.933v34.133
+				H136.533z M264.533,255h91.627l21.333,34.133h-112.96V255z M102.4,476.867c-23.893,0-42.667-18.773-42.667-42.667
+				s18.773-42.667,42.667-42.667c23.893,0,42.667,18.773,42.667,42.667S126.293,476.867,102.4,476.867z M409.6,476.867
+				c-23.893,0-42.667-18.773-42.667-42.667s18.773-42.667,42.667-42.667c23.893,0,42.667,18.773,42.667,42.667
+				S433.493,476.867,409.6,476.867z M477.013,425.667h-8.283c-4.075-29.155-28.753-51.2-59.131-51.2
+				c-0.138,0-0.274,0.009-0.412,0.01c-0.148-0.001-0.294-0.01-0.441-0.01c-29.867,0-54.613,22.187-58.88,51.2H161.531
+				c-3.821-27.339-25.761-48.416-53.528-50.936c-0.203-0.019-0.409-0.029-0.613-0.046c-0.699-0.056-1.397-0.114-2.103-0.147
+				c-0.957-0.046-1.919-0.072-2.887-0.072s-1.93,0.026-2.887,0.072c-0.706,0.033-1.404,0.09-2.103,0.147
+				c-0.204,0.017-0.41,0.027-0.613,0.046c-27.767,2.52-49.707,23.597-53.528,50.936H29.867c-6.827,0-12.8-5.973-12.8-12.8v-38.4
+				h25.6c5.12,0,8.533-3.413,8.533-8.533s-3.413-8.533-8.533-8.533h-25.6v-21.333c0-0.853,0-1.707,1.707-2.56
+				c0.853-0.853,1.707-1.707,3.413-1.707c15.36,0,30.72-8.533,38.4-21.333l42.667-69.12c7.68-12.8,21.333-20.48,35.84-20.48h174.08
+				c13.243,0,25.758,6.418,33.034,17.92H134.827c-8.533,0-15.36,6.827-15.36,15.36v36.693c0,8.533,6.827,15.36,15.36,15.36h255.962
+				c16.629,16.704,39.562,26.453,64.038,26.453h34.987c2.56,0,4.267,1.707,4.267,4.267v20.48h-24.747
+				c-5.12,0-8.533,3.413-8.533,8.533s3.413,8.533,8.533,8.533h24.747V408.6C494.08,417.987,486.4,425.667,477.013,425.667z" />
+                                <path d="M298.667,331.8H256c-5.12,0-8.533,3.413-8.533,8.533s3.413,8.533,8.533,8.533h34.133v8.533
+				c0,5.12,3.413,8.533,8.533,8.533s8.533-3.413,8.533-8.533v-17.067C307.2,335.213,303.787,331.8,298.667,331.8z" />
+                            </g>
 
-        <!-- Où nous trouver-->
-        <h3 class="title-map archiDau">Où nous trouver !</h3>
-        <div class="text-map archiDau">
-            <p>
-                Partout sur l’Ile et tout le temps avec une connection internet vous pourrez accéder aux
-                différents véhicules disponibles en fonction de vos besoins et réserver. Nous avons des points
-                de retrait et de dépot des véhicules
-            </p>
-        </div>
-        <!--Google map-->
-        <div id="map-container-google-2"
-            class="z-depth-1-half map-container d-none d-sm-block box-iframe d-md-none d-lg-block"
-            style="height: 500px">
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1cKXiiC1ynSAyX-xqvyPap-lUJ2zLysta" width="100%"
-                height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-        </div>
-        <!--Google Maps-->
-        <!--Pour mobile liste des villes-->
-        <div class="d-block d-none d-md-block d-lg-none archiDau">
-            <div id="liste" class="d-flex justify-content-around">
-                <div>
-                    <span>Saint Denis</span>
-                    <span>Sainte Marie</span>
-                </div>
-                <div>
-                    <span>Saint André</span>
-                    <span>Saint Gille</span>
-                </div>
-                <div>
-                    <span>Saint Pierre</span>
-                    <span>Saint Paul</span>
+                        </svg>
+                        <p class="vehicule"> Voiture électrique</p>
+                        <p class="tarif">250€/mois</p>
+                    </div>
+                    <!--UTILITAIRES-->
+                    <div class="col text-center vignette">
+                        <svg version="1.1" x="0px" y="0px" viewBox="0 0 512 512" width="15em" height="15em">
+                            <path d="M507.109,210.819L440.31,144.02c-3.131-3.131-7.377-4.891-11.805-4.891H395.13h-61.217V89.044
+                                c0-9.22-7.475-16.696-16.696-16.696H16.696C7.475,72.348,0,79.823,0,89.044v267.13c0,9.22,7.475,16.696,16.696,16.696h16.696
+                                c0,36.824,29.959,66.783,66.783,66.783c36.824,0,66.783-29.959,66.783-66.783h150.261h27.826
+                                c0,36.824,29.959,66.783,66.783,66.783s66.783-29.959,66.783-66.783h16.696c9.22,0,16.696-7.475,16.696-16.696V256v-33.375
+                                C512,218.198,510.241,213.95,507.109,210.819z M100.174,406.261c-18.412,0-33.391-14.979-33.391-33.391
+                                c0-3.233,0.471-6.358,1.332-9.317c0.285-0.579,0.55-1.171,0.769-1.789c4.421-12.44,15.671-21.067,28.517-22.161
+                                c0.125-0.01,0.249-0.02,0.374-0.029c0.794-0.059,1.593-0.096,2.399-0.096c0.806,0,1.605,0.037,2.4,0.096
+                                c0.125,0.009,0.249,0.018,0.374,0.029c12.847,1.095,24.096,9.72,28.517,22.161c0.219,0.619,0.484,1.211,0.769,1.789
+                                c0.862,2.96,1.332,6.083,1.332,9.317C133.565,391.281,118.586,406.261,100.174,406.261z M300.522,339.478h-142.55
+                                c-10.103-17.42-27.843-29.873-48.612-32.745c-0.407-0.057-0.816-0.107-1.224-0.156c-0.583-0.07-1.165-0.138-1.753-0.193
+                                c-0.771-0.073-1.546-0.131-2.324-0.177c-0.301-0.018-0.602-0.032-0.904-0.046c-0.99-0.044-1.982-0.076-2.981-0.076
+                                c-0.998,0-1.991,0.031-2.981,0.076c-0.302,0.013-0.603,0.029-0.904,0.046c-0.777,0.046-1.552,0.105-2.324,0.177
+                                c-0.588,0.055-1.17,0.122-1.753,0.193c-0.409,0.05-0.818,0.099-1.224,0.156c-20.769,2.872-38.509,15.323-48.612,32.745h-8.984
+                                v-66.783h267.13V339.478z M300.522,155.826v83.478H33.391V105.739h267.13V155.826z M411.826,406.261
+                                c-18.412,0-33.391-14.979-33.391-33.391c0-3.233,0.471-6.355,1.332-9.315c0.286-0.579,0.55-1.172,0.77-1.791
+                                c4.42-12.44,15.671-21.067,28.516-22.161c0.125-0.01,0.249-0.02,0.374-0.029c0.795-0.059,1.594-0.096,2.4-0.096
+                                s1.605,0.037,2.4,0.096c0.125,0.009,0.249,0.018,0.374,0.029c12.847,1.095,24.096,9.72,28.516,22.161
+                                c0.22,0.619,0.485,1.212,0.77,1.791c0.859,2.96,1.33,6.082,1.33,9.315C445.217,391.281,430.238,406.261,411.826,406.261z
+                                 M478.609,339.478h-8.984c-10.104-17.42-27.843-29.873-48.612-32.745c-0.407-0.057-0.816-0.107-1.224-0.156
+                                c-0.583-0.07-1.165-0.138-1.753-0.193c-0.771-0.073-1.546-0.131-2.324-0.177c-0.3-0.018-0.602-0.032-0.904-0.046
+                                c-0.991-0.045-1.982-0.076-2.981-0.076s-1.991,0.031-2.981,0.076c-0.302,0.013-0.603,0.029-0.904,0.046
+                                c-0.777,0.046-1.553,0.105-2.324,0.177c-0.588,0.055-1.17,0.122-1.753,0.193c-0.408,0.05-0.818,0.099-1.224,0.156
+                                c-20.769,2.872-38.509,15.323-48.612,32.745h-20.115V172.522h44.522V256c0,9.22,7.475,16.696,16.696,16.696h83.478V339.478z
+                                 M478.609,239.304h-66.783v-66.783h9.764l57.019,57.019V239.304z" />
+                        </svg>
+                        <p class="vehicule">Utilitaires</p>
+                        <p class="tarif">350€/mois</p>
+                    </div>
+                    <!--VELO-->
+                    <div class="col text-center vignette">
+                        <svg version="1.1" x="0px" y="0px" viewBox="0 0 490 490" width="15em" height="15em">
+                            <path d="M396.425,200.65c-6.451,0-12.751,0.656-18.838,1.905L338.84,102.188h-56.475v20.851h42.181l17.935,46.459l-135.844,47.243
+                        l-33.598-52.503l-18.417-30.946h22.115v-20.851h-70.78v20.851h24.402l21.707,36.476l-21.74,38.402
+                        c-11.286-4.837-23.705-7.52-36.741-7.52C41.988,200.65,0,242.633,0,294.231c0,51.598,41.988,93.581,93.586,93.581
+                        c46.271,0,84.799-33.764,92.262-77.945l55.546,3.125l-9.268,15.703H220.29v20.851h32.712v-15.195l35.103-59.479h9.114v-20.851
+                        h-32.712v19.807l-10.239,17.348l-36.081-56.382l131.803-45.837l7.748,20.071c-32.353,14.748-54.9,47.393-54.9,85.203
+                        c0,51.598,41.987,93.581,93.585,93.581S490,345.829,490,294.231C490,242.633,448.023,200.65,396.425,200.65z M93.586,366.961
+                        c-40.104,0-72.735-32.626-72.735-72.73s32.631-72.729,72.735-72.729c9.303,0,18.195,1.775,26.379,4.973l-43.717,77.225l88.616,4.986
+                        C158.142,341.888,128.74,366.961,93.586,366.961z M166.015,287.863l-55.09-3.1l27.17-47.989
+                        C153.666,248.865,164.206,267.126,166.015,287.863z M187.015,289.045c-1.591-28.986-16.435-54.498-38.561-70.57l16.216-28.642
+                        l65.018,101.613L187.015,289.045z M396.425,366.961c-40.104,0-72.734-32.626-72.734-72.73c0-28.96,17.019-54.013,41.576-65.704
+                        l30.2,78.232l19.447-7.514l-29.68-76.882c3.649-0.566,7.385-0.863,11.19-0.863c40.104,0,72.724,32.626,72.724,72.729
+                        S436.529,366.961,396.425,366.961z" />
+                        </svg>
+                        <p class="vehicule">Vélo</p>
+                        <p class="tarif">120€/mois</p>
+                    </div>
+                    <!--TROTTINETTE-->
+                    <div class="col text-center vignette">
+                        <svg version="1.1" x="0px" y="0px" viewBox="0 0 336.085 336.085" width="15em" height="15em">
+                            <path d="M296.179,241.082l-26.336-216.04l11.801,0c3.559,0,6.663-2.743,6.77-6.3c0.11-3.681-2.841-6.7-6.497-6.7l-39.556,0
+	c-3.559,0-6.663,2.743-6.77,6.3c-0.11,3.681,2.841,6.7,6.497,6.7h14.658l21.747,178.391c-0.396,0.312-57.554,72.609-57.554,72.609
+	H99.775l-3.034-12.987c-6.651-28.471-31.715-48.355-60.952-48.355H17.37c-3.559,0-6.663,2.743-6.77,6.3
+	c-0.11,3.681,2.841,6.7,6.497,6.7h18.691c23.043,0,43.05,15.872,48.292,38.311l2.343,10.032h-3.936
+	c-3.285-20.793-22.065-36.504-44.105-34.885c-20.369,1.496-36.823,17.987-38.276,38.359c-1.729,24.246,17.508,44.527,41.393,44.527
+	c20.672,0,37.858-15.194,40.987-35.001h142.358c1.512,0,2.94-0.692,3.876-1.879l51.954-65.819l2.594,21.278
+	c-18.321,5.2-31.527,22.688-30.077,42.956c1.46,20.391,17.927,36.875,38.317,38.352c24.266,1.758,44.575-17.489,44.575-41.389
+	C336.085,260.193,318.325,241.924,296.179,241.082z M41.501,311.043C25.785,311.043,13,298.258,13,282.542
+	c0-15.715,12.785-28.5,28.501-28.5c13.478,0,24.793,9.408,27.743,22H41.501c-3.59,0-6.5,2.91-6.5,6.5s2.91,6.5,6.5,6.5h27.743
+	C66.294,301.635,54.979,311.043,41.501,311.043z M294.585,311.043c-15.715,0-28.5-12.785-28.5-28.501
+	c0-12.305,7.84-22.813,18.786-26.793l3.179,26.079c0.401,3.297,3.205,5.715,6.444,5.715c0.262,0,0.527-0.017,0.794-0.049
+	c3.563-0.435,6.101-3.675,5.666-7.238l-3.173-26.03c14.215,1.595,25.304,13.683,25.304,28.316
+    C323.085,298.258,310.3,311.043,294.585,311.043z" />
+                        </svg>
+                        <p class="vehicule">Trotinette</p>
+                        <p class="tarif">80€/mois</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!--Fin mobile liste-->
-        <!--Fin Où nous trouver-->
+        </section>
+        <!-----------------------------CHIFFRES --------------------------------->
+        <section id="chiffre">
+            <div class="container">
+                <div class="row row-cols-lg-4 row-cols-2">
+                    <div class="col chiffre">
+                        <p id="trajets"></p>
+                        <p>Trajets</p>
+                    </div>
+                    <div class="col chiffre">
+                        <p id="vehicules"></p>
+                        <p>Véhicules</p>
+                    </div>
+                    <div class="col chiffre">
+                        <p id="employes"></p>
+                        <p>Employés</p>
+                    </div>
+                    <div class="col chiffre">
+                        <p id="points_de_retrait"></p>
+                        <p>Points de retrait</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-----------------------------NOS PARTENAIRES --------------------------------->
+        <section id="partner">
+            <!-- Carousel des partenaires -->
+            <div class="container text-center">
+                <h2>Nos partenaires</h2>
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="2000">
+                            <img src="/images/logo-antenne-reunion.png" class="d-block m-auto"
+                                alt="Logo d'Antenne Réunion"> Antenne Réunion
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="/images/logo-jir.png" class="d-block m-auto" alt="Logo JIR"> JIR
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="/images/logo-sfr.svg" class="d-block m-auto" alt="Logo SFR"> SFR
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="/images/logo-weldom.svg" class="d-block m-auto" alt="Logo Weldom"> Weldom
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="/images/logo-mauvilac.png" class="d-block m-auto" alt="Logo SFR"> Mauvillac
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="/images/logo-bouygues.png" class="d-block m-auto" alt="Logo SFR"> Bouygues
+                            Telecom
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="/images/logo-edf.svg" class="d-block m-auto" alt="Logo EDF"> Bouygues
+                            Telecom
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-----------------------------OU NOUS TROUVER --------------------------------->
+        <section id="ou-nous-trouver">
+            <!-- Où nous trouver-->
+            <h3 class="title-map archiDau">Où nous trouver !</h3>
+            <div class="text-map archiDau">
+                <p>
+                    Partout sur l’Ile et tout le temps avec une connection internet vous pourrez accéder aux
+                    différents véhicules disponibles en fonction de vos besoins et réserver. Nous avons des points
+                    de retrait et de dépot des véhicules
+                </p>
+            </div>
+            <!--Google map-->
+            <div id="map-container-google-2" class="z-depth-1-half map-container d-md-none d-lg-block "
+                style="height: 500px">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1cKXiiC1ynSAyX-xqvyPap-lUJ2zLysta" width="100%"
+                    height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <!--Google Maps-->
+            <!--Pour mobile liste des villes-->
+            <div class="d-block d-none d-md-block d-lg-none archiDau">
+                <div id="liste" class="d-flex justify-content-around flex-column text-center">
+                    <div>
+                        <span>Saint Denis</span>
+                        <span>Sainte Marie</span>
+                    </div>
+                    <div>
+                        <span>Saint André</span>
+                        <span>Saint Gille</span>
+                    </div>
+                    <div>
+                        <span>Saint Pierre</span>
+                        <span>Saint Paul</span>
+                    </div>
+                </div>
+            </div>
+            <!--Fin mobile liste-->
+            <!--Fin Où nous trouver-->
+        </section>
 
-        <!-- Formulaire -->
-        <section>
+        <!-----------------------------CONTACT --------------------------------->
+        <section id="contact">
             <div class="container">
                 <div class="row row-cols-lg-2 row-cols-1 mt-2">
-                    <div class="col">
+                    <div class="col text-center">
                         <h2>Nous Contacter</h2>
                         <form class="d-flex flex-column">
                             <div class="form-group">
@@ -119,35 +376,68 @@
 
                         </form>
                     </div>
-                    <div class="col">
+                    <div class="col text-center">
                         <h2>Contact</h2>
-                        <p>
-                            Circonstance heureuse, pourtant, nous vivons encore pour que tant de bénévole audace leur
-                            attire.
-                            Maudits soient le cuisinier qui l'avait écrit dans le livre de messe à la ville. Dame, je le
-                            suivis,
-                            dans les vastes échanges cosmiques, la vie était neuve. Notons pourtant cette différence que
-                            les
-                            critiques étaient élogieuses ? Conçues par un penseur sont désormais rattachées aux
-                            problèmes que sa
-                            génération apparente n'est qu'évanouie. Plantes chez lesquelles l'amour de sa machine avait
-                            peine à
-                            parler. Agis sur ce principe que circule le papier monnaie. Impassible, l'homme et aux
-                            circonstances, mais jamais ils ne surent plus dans quel sens.
-                        </p>
+                        <h3> Adresse</h3>
+                        <p> zlekrozrjzjreoz zprkzeprk 6 rue alezaze</p>
+                        <h3>email</h3>
+                        <p>rougs06@hotmail.com</p>
+                        <h3>Téléphone</h3>
+                        <p>+262.6 99999999</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-----------------------------FOOTER --------------------------------->
+        <footer>
+            <div class="container">
+                <div class="row row-cols-lg-2 row-cols-1">
+                    <div class="col text-center">
+                        <div id="logo">Roug'SO6</div>
+                        <p>Rue du dazeo, 68 dzaeaze 97400
+                            <br>
+                            araze ferae, Saint-Denis
+                            <br>
+                            +262.6 99999999
+                        </p>
+                    </div>
+                    <div class="col text-center mt-5">
+                        <div class="d-flex">
+                            <a class="m-auto" href="#"><img class="img-fluid " src="/images/instagram.svg"
+                                    alt="Instagram" width="50px" height="50px"></a>
+                            <a class="m-auto" href="#"><img class="img-fluid m-auto" src="/images/twitter.svg"
+                                    alt="Twitter" width="50px" height="50px"></a>
+                            <a class="m-auto" href="#"> <img class="img-fluid m-auto" src="/images/facebook.svg"
+                                    alt="facebook" width="50px" height="50px"> </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-center"> <a href="#">Mentions légales </a> - <a href="#">Conditions générales
+                                d'utilisation</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <!-- jQuery and JS bundle w/ Popper.js -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!--Option 2: jQuery, Popper.js, and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+    <script src="/collab/andry/script.js"></script>
 </body>
 
 </html>
