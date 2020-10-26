@@ -1,7 +1,7 @@
 window.onload = function () {
 
   window.addEventListener('scroll', function() {
-    console.log(window.scrollY);
+    
     if (window.scrollY >= 1500) {
       window.addEventListener('scroll', move_trajets);
       window.addEventListener('scroll', move_vehicules);
