@@ -15,8 +15,8 @@ section, footer {
     padding: 3em 0!important;
 }
 
-header {
-    /*padding-top: 1em;*/
+.header {
+    position: absolute;
     
 }
 
@@ -33,6 +33,11 @@ header {
     font-size: 1.5em;
 }
 
+nav {
+    position: absolute!important;
+    top: 80px;
+}
+
 nav a {
     color: black;
     font-size: 1em;
@@ -42,8 +47,15 @@ nav a {
 .slider {
     z-index: 1;
     top:-200px;
-    /*position: initial;*/
+    position: initial;
     
+}
+.slider-caption {
+    bottom: 230px;
+}
+.slider a {
+    background-color: #24B5BD;
+    border: none;
 }
 
 #test {
@@ -182,4 +194,10 @@ footer {
 }
 footer a {
     color: black;
+}
+
+@media (max-width: 768px) {
+    .slider-caption {
+        bottom: -65px;
+    }
 }
