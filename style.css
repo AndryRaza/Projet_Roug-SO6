@@ -172,6 +172,7 @@ font-size: 30px;
 }
 #ou-nous-trouver {
     padding-bottom: 0!important;
+    opacity: 0;
 }
 
 #ou-nous-trouver h3, .text-map {
@@ -267,8 +268,8 @@ footer a {
   }
   
   .slide-in-bottom {
-	-webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: slide-in-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
  @-webkit-keyframes slide-in-bottom {
