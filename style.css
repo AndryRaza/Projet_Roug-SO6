@@ -33,6 +33,10 @@ section, footer {
     font-size: 1.5em;
 }
 
+#tagline {
+    display: none;
+}
+
 nav {
     position: absolute!important;
     top: 80px;
@@ -53,10 +57,18 @@ nav a {
 .slider .btn {
     background-color: #5ECF65!important;
     border: none;
+    display: block;
+    width: 180px;
+    text-align: center;
+    margin: auto;
 }
 
 .slider-caption {
-    bottom: 25%;
+    /*bottom: 30%;*/
+}
+
+.slider-caption .jumbotron {
+    padding-bottom: 15em;
 }
 
 #test {
@@ -110,10 +122,10 @@ nav a {
 #tarif svg {
     fill: none;
     stroke: white;
-    stroke-width: 2px;
-    width: 10em;
-    height: 10em;
-    margin-bottom: 2em;
+    stroke-width: 1px;
+    width: 8em;
+    height: 8em;
+    /*margin-bottom: 2em;*/
 }
 
 #tarif h1 {
@@ -123,11 +135,13 @@ nav a {
 .vignette {
     background-color: #5E5139;
     color: white;
-    padding: 2em;
+    padding: 1em;
+    max-width: 248px;
+    max-height: 248px;
 }
 .vehicule {
     font-family: 'Gloria Hallelujah', cursive;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 #tarif {
@@ -145,7 +159,7 @@ nav a {
 
 #chiffre {
     text-align: center;
-    background-image: url('/images/back-chiffre.jpg');
+    background-image: url('/images/slide-04.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: 100%;
@@ -153,7 +167,7 @@ nav a {
 }
 
 #trajets, #vehicules, #employes, #points_de_retrait {
-    font-size: 40px;
+    font-size: 2.7em;
     font-weight: bolder;
 }
 
@@ -166,7 +180,7 @@ font-size: 30px;
 }
 
 #partner img {
-    width: 10%!important;
+    font-family: 'Anton', sans-serif;
     
 }
 #ou-nous-trouver {
@@ -189,6 +203,18 @@ font-size: 30px;
     padding: 3em;
 }
 
+#contact button {
+    background-color: #005160;
+}
+
+#contact h2 {
+    margin-bottom: 1em;
+}
+
+#contact .form-group {
+    margin-bottom: 2em;
+}
+
 footer {
     background-color: #00849C;
     color: white;
@@ -206,28 +232,52 @@ footer a {
         flex-direction: column;
         background-color: #00849C;
         max-width: 100%;
+        position: initial;
+    }
+
+    #tagline {
+        display: block;
+        margin-top: 2em;
     }
     
     .carousel-inner img {
         display: none!important;
     }
 
+    .vignette {
+        margin-bottom: 3em;
+    }
+
+    #tarif h1 {
+        margin-bottom: 1em;
+    }
+
 }
 
 @media (min-width: 768px) {
 
-    .slider-caption {
-       bottom: -65px;
+    .slider-caption .jumbotron {
+        padding-bottom: 0;
     }
 
     .slider-caption a {
         display: none;
     }
 
+    .vignette {
+        margin-bottom: 5em;
+    }
+
 }
 
 @media (min-width: 1024px) {
-    .slider-caption {
-        bottom: 35px;
+    .slider-caption .jumbotron {
+        padding-bottom: 5em;
+    }
+}
+
+@media (min-width: 1440px) {
+    .slider-caption .jumbotron {
+        padding-bottom: 19em;
     }
 }
