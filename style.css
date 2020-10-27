@@ -198,7 +198,7 @@ footer a {
     color: black;
 }
 
-<<<<<<< HEAD
+HEAD
 .flip-vertical-right {
 	-webkit-animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	        animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
@@ -296,7 +296,7 @@ footer a {
   }
   
 
-=======
+
 
 /************** MEDIA QUERIES **************/
 
@@ -331,4 +331,4 @@ footer a {
         bottom: 35px;
     }
 }
->>>>>>> a239cd334e1f385e8fee25c021212ee19f6f64f8
+
