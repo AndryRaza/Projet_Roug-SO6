@@ -93,8 +93,6 @@ window.onload = function () {
     }
   }
 
-
-
   function move_pts() {
     if (!anim_pts) {
       var elem = document.getElementById("points_de_retrait");
