@@ -62,22 +62,13 @@ nav a {
     text-align: center;
     margin: auto;
 }
-.jumbotron {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.slider-caption {
-    /*bottom: 30%;*/
-}
 
 .slider-caption .jumbotron {
-    padding-bottom: 15em;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -14em;
 }
 
-#test {
-    /*position: relative;
-    bottom: 230px;*/
-}
 
 /******************QSN******************/
 
@@ -296,8 +287,8 @@ footer a {
   }
   
   .slide-in-bottom {
-	-webkit-animation: slide-in-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
  @-webkit-keyframes slide-in-bottom {
@@ -363,7 +354,7 @@ footer a {
 @media (min-width: 768px) {
 
     .slider-caption .jumbotron {
-        padding-bottom: 0;
+        top: 3em;
     }
 
     .slider-caption a {
@@ -378,13 +369,13 @@ footer a {
 
 @media (min-width: 1024px) {
     .slider-caption .jumbotron {
-        padding-bottom: 5em;
+        top: 0;
     }
 }
 
 @media (min-width: 1440px) {
     .slider-caption .jumbotron {
-        padding-bottom: 19em;
+        top: -6em;
     }
 }
 
