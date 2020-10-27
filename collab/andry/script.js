@@ -2,7 +2,7 @@ window.onload = function () {
 
   window.addEventListener('scroll', function () {
 
-    if (window.scrollY >= 1400) {
+    if (window.scrollY >= (document.getElementById('chiffre').offsetTop-(document.getElementById('tarif').offsetHeight))) {
       window.addEventListener('scroll', move_trajets);
       window.addEventListener('scroll', move_vehicules);
       window.addEventListener('scroll', move_employes);
@@ -10,11 +10,34 @@ window.onload = function () {
     }
   });
 
+  window.addEventListener('scroll', function () {
 
-  anim_trajets = false;
-  anim_vehicules = false;
-  anim_employes = false;
-  anim_pts = false;
+    if (window.scrollY >= (document.getElementById('tarif').offsetTop-(document.getElementById('about').offsetHeight/2))) {
+      window.addEventListener('scroll', fun_anim_flip())
+    }
+  });
+
+  window.addEventListener('scroll', function () {
+
+    if (window.scrollY >= (document.getElementById('chiffre').offsetTop + 50) ){
+      window.addEventListener('scroll', fun_anim_texte())
+    }
+  });
+
+  window.addEventListener('scroll', function () {
+
+    if (window.scrollY >= (document.getElementById('ou-nous-trouver').offsetTop + 200) ){
+      window.addEventListener('scroll', fun_anim_form())
+    }
+  });
+
+  var anim_trajets = false;
+  var anim_vehicules = false;
+  var anim_employes = false;
+  var anim_pts = false;
+  var anim_flip = false;
+  var anim_text = false;
+  var anim_form = false;
 
   function move_trajets() {
     if (!anim_trajets) {
@@ -70,7 +93,7 @@ window.onload = function () {
     }
   }
 
-  
+
 
   function move_pts() {
     if (!anim_pts) {
@@ -89,24 +112,51 @@ window.onload = function () {
       }
     }
   }
-/*
-  function chiffre(max, interval, id, bool_, time) {
-    if (!bool_) {
-      var elem = document.getElementById(id)
-      var i = 0;
-      var id = setInterval(frame, time);
-      function frame() {
-        if (i == max) {
-          elem.innerHTML = i;
-          bool_ = true;
-          clearInterval(id);
-        } else {
-          i = i + interval;
-          elem.innerHTML = i;
+
+  function fun_anim_flip() {
+    var els = document.getElementsByClassName('vignette');
+    if (!anim_flip){
+      for(i=0; i < els.length ; i++){
+        els[i].className += " flip-vertical-right ";
+      }
+      anim_flip=true;
+    }
+  }
+
+  function fun_anim_texte(){
+    var els = document.getElementById('ou-nous-trouver');
+    if (!anim_text){
+      els.classList.add('tracking-in-expand-fwd')
+      anim_text=true;
+    }
+  }
+
+  function fun_anim_form(){
+    var els = document.getElementById('contact');
+    if (!anim_form){
+      els.classList.add('slide-in-bottom')
+      anim_form=true;
+    }
+  }
+
+  /*
+    function chiffre(max, interval, id, bool_, time) {
+      if (!bool_) {
+        var elem = document.getElementById(id)
+        var i = 0;
+        var id = setInterval(frame, time);
+        function frame() {
+          if (i == max) {
+            elem.innerHTML = i;
+            bool_ = true;
+            clearInterval(id);
+          } else {
+            i = i + interval;
+            elem.innerHTML = i;
+          }
         }
       }
     }
-  }
-*/
+  */
 
 }
