@@ -15,12 +15,12 @@ section, footer {
     padding: 3em 0!important;
 }
 
-header {
-    /*padding-top: 1em;*/
+.header {
+    position: absolute;
     
 }
 
-#logo {
+.logo {
     font-family: 'Architects Daughter', cursive;
     z-index: 2;
     font-size: 2.5em;
@@ -33,6 +33,11 @@ header {
     font-size: 1.5em;
 }
 
+nav {
+    position: absolute!important;
+    top: 80px;
+}
+
 nav a {
     color: black;
     font-size: 1em;
@@ -42,8 +47,16 @@ nav a {
 .slider {
     z-index: 1;
     top:-200px;
-    /*position: initial;*/
+    position: initial;
     
+}
+.slider .btn {
+    background-color: #5ECF65!important;
+    border: none;
+}
+
+.slider-caption {
+    bottom: 25%;
 }
 
 #test {
@@ -185,6 +198,7 @@ footer a {
     color: black;
 }
 
+<<<<<<< HEAD
 .flip-vertical-right {
 	-webkit-animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	        animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
@@ -282,3 +296,39 @@ footer a {
   }
   
 
+=======
+
+/************** MEDIA QUERIES **************/
+
+@media (max-width: 360px) {
+
+    .header {
+        flex-direction: column;
+        background-color: #00849C;
+        max-width: 100%;
+    }
+    
+    .carousel-inner img {
+        display: none!important;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .slider-caption {
+       bottom: -65px;
+    }
+
+    .slider-caption a {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .slider-caption {
+        bottom: 35px;
+    }
+}
+>>>>>>> a239cd334e1f385e8fee25c021212ee19f6f64f8
