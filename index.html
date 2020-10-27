@@ -17,7 +17,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-
 </head>
 
 <body>
@@ -93,8 +92,8 @@
         <section id="about">
             <div class="container">
                 <h2 class="text-center mb-5 mt-3">Qui sommes-nous ?</h2>
-                <div class="row row-cols-lg-2 row-cols-1 text-center align-items-center d-flex">
-                    <div class="col d-none d-sm-block"><img class="nous-img pb-2" src="/images/about.jpg"
+                <div class="row row-cols-lg-2 row-cols-1 text-center align-items-center d-flex animated slideInLeft">
+                    <div class="col d-none d-sm-block"><img class="nous-img pb-2" src="./images/about.jpg"
                             alt="Voiture électrique"></div>
                     <div class="col">
                         <p class="text-nous text-left">
@@ -315,7 +314,7 @@
                 </p>
             </div>
             <!--Google map-->
-            <div id="map-container-google-2" class="z-depth-1-half map-container d-md-none d-lg-block "
+            <div id="map-container-google-2" class="z-depth-1-half map-container d-none d-lg-block"
                 style="height: 500px">
                 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1cKXiiC1ynSAyX-xqvyPap-lUJ2zLysta" width="100%"
                     height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
@@ -324,18 +323,18 @@
             <!--Google Maps-->
             <!--Pour mobile liste des villes-->
             <div class="d-block d-none d-md-block d-lg-none archiDau">
-                <div id="liste" class="d-flex justify-content-around flex-column text-center">
-                    <div>
+                <div id="liste" class="d-flex justify-content-around text-center">
+                    <div class="d-flex flex-column">
                         <span>Saint Denis</span>
-                        <span>Sainte Marie</span>
+                        <span>Saint Paul</span>
                     </div>
-                    <div>
+                    <div class="d-flex flex-column">
                         <span>Saint André</span>
                         <span>Saint Gille</span>
                     </div>
-                    <div>
+                    <div class="d-flex flex-column">
                         <span>Saint Pierre</span>
-                        <span>Saint Paul</span>
+                        <span>Sainte Marie</span>
                     </div>
                 </div>
             </div>
