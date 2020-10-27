@@ -2,7 +2,7 @@ window.onload = function () {
 
   window.addEventListener('scroll', function () {
 
-    if (window.scrollY >= 1500) {
+    if (window.scrollY >= 1400) {
       window.addEventListener('scroll', move_trajets);
       window.addEventListener('scroll', chiffre(230, 1, "vehicules", anim_vehicules, 10));
       window.addEventListener('scroll', chiffre(33, 1, "employes", anim_employes, 60));
